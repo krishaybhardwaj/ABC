@@ -1,16 +1,12 @@
 y = int(input("Enter any number: "))
 def fibonacci(x):
-    count = 0
-    term_1 = 0
-    term_2 = 1
-    while count < x:
-        print(term_1)
-        term_x = term_1 + term_2
-        term_1 = term_2
-        term_2 = term_x
-        count+=1
-    return count
-print(fibonacci(y))
-
-
-
+    if x == 0:
+        return 0
+    elif x == 1:
+        return 1
+    else:
+        return fibonacci(x-2) + fibonacci(x-1)
+for x in range(y):
+        
+    print(fibonacci(x))
+    
